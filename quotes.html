@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Random Quotes</title>
+	<link rel="stylesheet" href="quotes.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+</head>
+<body onload="startTime(); startDate()">
+	
+	<div class="loader" id="loader">
+		<div id="dt">
+			<h3 id="time"></h3>
+			<h2 id="date"></h2>
+		</div>
+		<div id="heading">
+			<h1 id="change-color">Hit the button to know your quote of the day</h1>
+		</div>
+	<div class="wrapper">
+		<blockquote id="display" class="blockquote-reverse">
+			<p id="display-quote"></p>
+			<p><footer id="author"></footer></p>
+		</blockquote>
+	</div>
+	<button onClick="newQuote()" id="btn" type="button" class="btn btn-outline-primary">Next Quote</button>
+
+	<div class="links">
+		<a href="#"><i class="ion-social-twitter-outline" id="twitter"></i></a>
+		<a href="#"><i class="ion-social-github-outline" id="git"></i></a>
+		<a href="#"><i class="ion-social-codepen-outline" id="pen"></i></a>
+	</div>
+	</div>
+
+<script src="quotes.js" type="text/javascript"></script>
+</body>
+</html>
